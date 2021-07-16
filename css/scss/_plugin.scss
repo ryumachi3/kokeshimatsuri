@@ -1,0 +1,160 @@
+// -----------------------------------------------------------------
+// plugin
+// -----------------------------------------------------------------
+.slick-arrow:before{
+  content:""!important;
+  width: 100%!important;
+  height: 100%!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slick-next:before{
+  background: url(../img/button_arrow_line_right.svg)!important;
+  background-size: contain!important;
+}
+
+.slick-prev:before{
+  background: url(../img/button_arrow_line_left.svg)!important;
+  background-size: contain!important;
+}
+
+.slick-arrow{
+  z-index:2!important;
+  width:48px!important;
+  height:48px!important;
+  bottom: 0!important;
+  top: auto!important;
+}
+
+.p-what__list .slick-arrow{
+  left: $side-margin-slim!important;
+  right: auto!important;
+  @include mq(){
+    left: $side-margin-pc!important;
+  }
+}
+
+.p-events__event.-left .slick-arrow{
+  left: $side-margin-slim!important;
+  right: auto!important;
+  @include mq(){
+    left: $side-margin-pc!important;
+  }
+}
+
+.p-events__event.-right .slick-arrow{
+  left: auto!important;
+  right: $side-margin-slim!important;
+  @include mq(){
+    right: $side-margin-pc!important;
+  }
+}
+
+.slick-arrow:before{
+  opacity: 1;
+}
+
+.slick-next{
+  position: absolute;
+  transition: .15s all;
+}
+
+.slick-prev{
+  position: absolute;
+  transition: .15s all;
+}
+
+.p-what__list .slick-next{
+  transform: translate(130%,70%);
+  &:hover{
+    transform: translate(130%,70%) scale(1.05);    
+  }
+  &:active{
+    transform: translate(130%,70%) scale(1.08);
+  }
+}
+
+.p-what__list .slick-prev{
+  transform: translate(0, 70%);
+  &:hover{
+    transform: translate(0,70%) scale(1.05);
+  }
+  &:active{
+    transform: translate(0,70%) scale(1.08);
+  }
+}
+
+.p-events__event.-left .slick-next{
+  transform: translate(130%,70%);
+  &:hover{
+    transform: translate(130%,70%) scale(1.05);    
+  }
+  &:active{
+    transform: translate(130%,70%) scale(1.08);
+  }
+}
+
+.p-events__event.-left .slick-prev{
+  transform: translate(0, 70%);
+  &:hover{
+    transform: translate(0,70%) scale(1.05);
+  }
+  &:active{
+    transform: translate(0,70%) scale(1.08);
+  }
+}
+
+.p-events__event.-right .slick-next{
+  transform: translate(0, 70%);
+  &:hover{
+    transform: translate(0,70%) scale(1.05);
+  }
+  &:active{
+    transform: translate(0,70%) scale(1.08);
+  }
+}
+
+.p-events__event.-right .slick-prev{
+  transform: translate(-130%,70%);
+  &:hover{
+    transform: translate(-130%,70%) scale(1.05);    
+  }
+  &:active{
+    transform: translate(-130%,70%) scale(1.08);
+  }
+}
+
+div#fancybox-outer {
+  box-shadow: 0 0 10px #CCC;
+  -moz-box-shadow: 0 0 10px #CCC;
+  -webkit-box-shadow: 0 0 10px #CCC;
+}
+
+#fancybox-left-ico {
+  background: url(../img/button_arrow_line_left.svg)!important;
+  background-size: contain!important;
+  background-position: 0 !important;
+  transform: translate(-120%,0);
+}
+
+#fancybox-right-ico {
+  background: url(../img/button_arrow_line_right.svg)!important;
+  background-size: contain!important;
+  background-position: 0 !important;  
+  transform: translate(120%,0);
+}
+
+#fancybox-left-ico, #fancybox-right-ico {
+  width: 32px!important;
+  height: 32px!important;
+}
+
+#fancybox-close {
+  top: -18px!important;
+  right: -18px!important;
+  width: 32px!important;
+  height: 32px!important;
+  background: transparent url(../img/button_close_line.svg)!important;
+}

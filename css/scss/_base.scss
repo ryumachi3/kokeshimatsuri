@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap');
+
+// ==========================================================================
+// Constant
+// ========================================================================== 
+// -----------------------------------------------------------------
+// font
+// -----------------------------------------------------------------
+$jp-font: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+// -----------------------------------------------------------------
+// color
+// -----------------------------------------------------------------
+$light-line: #DEE4E6;
+$ttl: #000;
+$bg-base: #fff;
+$bg: #fff;
+$bg-gray: #fafafa;
+$main-txt: #000;
+$menu-txt: #000;
+$light-txt: #868686;
+$link: #EA5533;
+$point: #fff000;
+
+// -----------------------------------------------------------------
+// constant
+// -----------------------------------------------------------------
+$side-margin-slim: 24px;
+$side-margin-wide: 32px;
+$side-margin-pc: 56px;
+$header-height: 64px;
+$header-height-pc: 40px;
+$menu-width-pc: 200px;
+$def-link-height: 44px;
+$tb-width: 560px;
+$pc-width: 960px;
+$contents-width: 600px + $side-margin-pc * 2;
+$contents-max-sp: 600px;
+
+
+// -----------------------------------------------------------------
+// breakpoints
+// -----------------------------------------------------------------
+$breakpoints: (
+  'tb': 'screen and (min-width: 560px)',
+  'tb2': 'screen and (min-width: 769px)',
+  'pc': 'screen and (min-width: 960px)',
+  'pc2': 'screen and (min-width: 1100px)',
+  'maxwidth': 'screen and (min-width: 1366px)',
+  'maxwidth2': 'screen and (min-width: 1712px)',
+  'pc3': 'screen and (min-width: 1320px)',
+  'min': 'screen and (max-width: 352px)'
+) !default;
+
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// -----------------------------------------------------------------
+// function
+// -----------------------------------------------------------------
+$max-width-pc: 1366px;
+@function pxvwPC($target){
+  @return ($target / $max-width-pc) * 100vw;
+}
+
+$base-width-sp: 375px;
+@function pxvwSP($target){
+  @return ($target / $base-width-sp) * 100vw;
+}
+
+// ==========================================================================
+// base
+// ========================================================================== 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: $bg-base;
+  color: $main-txt;
+  font-family: $jp-font;
+  font-weight: 300;
+  font-style: normal;
+  height: 100%;
+  //animation: fadebody 1s ease-in;
+  font-feature-settings: "palt";
+  letter-spacing: .05em;
+  &.-noscroll{
+    
+  }
+}
+
+a {
+  cursor : pointer;
+}
+
+img,svg {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadebody{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

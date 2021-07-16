@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+.u-bg{
+  background-color: $bg;
+}
+
+.u-object-fit-img {
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+.u-pc_br{
+  display: none;
+  @include mq() {
+    display: inline;
+  }  
+}
+
+.u-sp_br{
+  display: inline;
+  @include mq(tb) {
+    display: none;
+  }  
+}
+
+.u-tel-number{
+  // iPhoneで自動的に電話番号がリンクになるため色を設定
+  a{
+    color:$main-txt;
+    text-decoration: underline;
+  }
+}
+
+.u-fax-number{
+  // iPhoneで自動的に電話番号がリンクになるため色を設定、FAXはアンダーラインも不要
+  a{
+    color:$main-txt;
+    text-decoration: none;
+  }
+}
+
+.u-mail-address{
+  color:$main-txt;
+  text-decoration: underline;
+}
+
+.u-under-line{
+  position: relative;
+  vertical-align: baseline;
+  background: linear-gradient(transparent 30%, $point 30%, $point 100%, transparent 100%);
+}

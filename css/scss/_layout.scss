@@ -1,0 +1,148 @@
+// ======================================================================
+// Layout
+// ======================================================================
+#header{
+  position: relative;
+  width: 100%;
+}
+
+#contents{
+  position: relative;
+  width: 100%;
+  line-height: 2.0;
+  text-align: center;
+  background-color: $bg;
+}
+
+.l-contents-wrap01{
+  overflow: hidden;
+  @include mq(maxwidth2){
+    padding-left: $side-margin-pc;
+    padding-right: $side-margin-pc;
+    width: 1712px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.l-contents-wrap02{
+  background-color: $bg-gray;
+  @include mq(){
+    height: 565px;
+  }
+}
+
+.l-contents-wrap02__inner{
+  display: block;
+  @include mq(maxwidth2){
+    padding-left: $side-margin-pc;
+    padding-right: $side-margin-pc;
+    width: 1712px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.l-contents-narrow{
+  padding-left: $side-margin-slim;
+  padding-right: $side-margin-slim;
+  max-width: $contents-max-sp;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(){
+    padding-left: $side-margin-pc;
+    padding-right: $side-margin-pc;
+    max-width: $contents-width;
+  }
+}
+
+.l-contents-width{
+  padding-left: $side-margin-slim;
+  padding-right: $side-margin-slim;
+  max-width: $contents-max-sp;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(){
+    padding-left: $side-margin-pc;
+    padding-right: $side-margin-pc;
+    max-width: $pc-width;
+  }
+}
+
+#kv{
+  position: relative;
+  background-color: $bg;
+  @include mq(maxwidth2){
+    padding-left: $side-margin-pc;
+    padding-right: $side-margin-pc;
+    width: 1712px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.l-common-sec__inner{
+  padding-left: $side-margin-slim;
+  padding-right: $side-margin-slim;
+  max-width: $contents-max-sp;
+  margin-left: auto;
+  margin-right: auto;
+  &.-wide{
+    max-width: 100%;
+  }
+  @include mq(){
+    padding-left: $side-margin-pc;
+    padding-right: $side-margin-pc;
+    max-width: 970px + $side-margin-pc * 2;
+    &.-wide{
+      max-width: 1127px + $side-margin-pc * 2;
+    }  
+  }
+}
+
+#contents-inner{
+  line-height: 2.0;
+  font-size: 13px;
+  color: $main-txt;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  @include mq(tb2) {
+    padding: 0 $side-margin-pc 0 $side-margin-pc;
+    max-width: 800px;
+  }
+  @include mq(pc2) {
+    max-width: 1200px; 
+  }
+}
+
+#content{
+  text-align: left;  
+}
+
+#form{
+  position: relative;
+}
+
+#l-footer-fixed{
+  min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative; /* ←相対位置 */
+  padding-bottom: 44px; /* ←フッターの高さを指定 */
+  box-sizing: border-box;
+  /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */ 
+  padding-bottom: 44px; /* ←フッターの高さを指定 */
+  @include mq(){
+    padding-bottom: 40px; /* ←フッターの高さを指定 */
+  }
+}
+
+.v-home{
+  // opacity: 1;
+  // transition: opacity .2s;
+}
+
+.v-home.-isloading{
+  // height: 0;
+  // overflow: hidden;
+  //  display: none;
+}

@@ -1,0 +1,277 @@
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+.c-loading{
+  width: 100vw;
+  height: 100%;
+  z-index: 1000;
+  position: absolute;
+  background-color: $bg;
+}
+
+.c-toggle{
+  cursor: pointer;
+}
+
+.c-title-jp{
+  display: block;
+  text-align: left;
+  font-size: 19px;
+  line-height: 1.6;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 600;
+  margin-bottom: .6em;
+  font-feature-settings: "palt";
+  letter-spacing: .05em;
+  @include mq(){
+    display: inline-block;
+    margin-bottom: .8em;
+    line-height: 1.4;
+    font-size: 38px;
+  }
+}
+
+.c-body{
+  text-align: left;
+  font-size: 14px;
+  font-feature-settings: "palt";
+  letter-spacing: .05em;
+  text-align: justify;
+  line-height: 1.9;
+  @include mq(){
+    font-size: 16px;
+  }
+  &.-attention{
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0px 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+    color: $link;
+    font-weight: 600;
+  }
+}
+
+.c-body + .c-body{
+  margin-top: 1.2em;
+}
+
+.c-title-top{
+  position: absolute;
+  padding-right: $side-margin-slim;
+  width: 100%;
+  top: 0;
+  @include mq(){
+    padding-right: $side-margin-pc;
+  }
+}
+
+.c-title-top-en{
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;  
+}
+
+.c-title-top-jp{
+    font-size: 16px;
+    text-align: right;
+    line-height: 1.2;
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    font-weight: 600;
+    @include mq(){
+      font-size: 28px;
+    }  
+}  
+
+.c-title-sub{
+  padding-right: $side-margin-slim;
+  width: 100%;
+  margin-top: -12px;
+  margin-bottom: 32px;
+  @include mq(){
+    padding-right: $side-margin-pc;
+    margin-top: -40px;
+    margin-bottom: 80px;
+  }
+}
+
+.c-title-sub-en{
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;  
+}
+
+.c-title-sub-jp{
+    font-size: 12px;
+    text-align: right;
+    line-height: 1.2;
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    font-weight: 600;
+    @include mq(){
+      font-size: 28px;
+    }  
+}  
+
+.c-button{
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: .15s all;
+  text-align: center;
+  @include mq(){
+    min-width: 252px;
+    font-size: 19px;
+  }
+  &.-point{
+    color: $main-txt;
+    background-color: $point;
+    border: solid 2px $point;
+    &:hover{
+      color: $bg;
+      background-color: $link;
+      border: solid 2px $link;
+    }
+  }
+  &.-normal{
+    padding-top: .9em;
+    padding-bottom: .9em;  
+    font-size: 16px;
+    color: $main-txt;
+    background-color: $bg;
+    border: solid 2px $main-txt;
+    &:hover{
+      color: $bg;
+      background-color: $main-txt;
+      border: solid 2px $main-txt;
+    }
+  }
+}
+
+.c-button-wrap{
+  text-align: center;
+}
+
+.c-more{
+  font-size: 19px;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  margin-left: auto;
+  &:hover{
+    .c-more__txt{
+      color: $link;
+      
+    }
+    .c-more__button .c-more__button__circle{
+      fill: $link;
+    }
+  }
+}
+
+.c-more__button{
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-left: 8px;
+  @include mq(){
+    width: 53px;
+    height: 53px;
+    margin-left: 8px;
+  }
+  .c-more__button__circle{
+    fill:#000;
+    -webkit-transition: fill 0.15s ease-out;
+    -moz-transition: fill 0.15s ease-out;
+    -o-transition: fill 0.15s ease-out;
+    -ms-transition: fill 0.15s ease-out;
+    transition: fill 0.15s ease-out;
+  }
+}
+
+.c-more__txt{
+  color: $main-txt;
+  text-decoration: none;  
+  line-height: 53px;
+  display: inline-block;
+  transition: color .15s ease-out;
+  font-size: 16px;
+  @include mq(){
+    font-size: 19px;
+  }
+}
+
+.c-more__button__arrow{
+    fill: #fff;
+}
+
+.c-body + .c-more{
+  margin-top: 1.5em;
+  @include mq(){
+    margin-top: 2em;
+  }
+}
+
+.c-main-title{
+  display: block;
+  width: 252px;
+  height: 75px;
+  margin-bottom: 11px;
+}
+
+.c-main-title__link{
+  display: inline-block;
+  text-decoration: none;
+  path.-fill{
+    fill: #000
+  }
+  path{
+    -webkit-transition: fill 0.15s ease-out;
+    -moz-transition: fill 0.15s ease-out;
+    -o-transition: fill 0.15s ease-out;
+    -ms-transition: fill 0.15s ease-out;
+    transition: fill 0.15s ease-out;
+  }
+  &:hover path.-fill{
+    //  fill: $link;
+  }
+}
+
+.c-dt-title{
+  line-height: 1.5;
+  font-size: 19px;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 600;
+  margin-bottom: .2em;
+  @include mq(){
+    font-size: 34px;
+  }
+}
+
+.c-dt-time{
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: $light-txt;
+  font-size: 16px;
+}
+
+.c-dt-article{
+  a {
+    color: $link
+  }
+  p + p {
+    padding-top: 1em;    
+  }
+}
