@@ -3,7 +3,7 @@
 <!-- main-visual-->
 <!-- キービジュアル -->
 <article id="kv" class="p-kv" scroll-dest="kv">
-  <img class="p-kv__badge" src="<?php bloginfo('template_url'); ?>/img/kv_badge_v2.svg">
+  <?php /* <img class="p-kv__badge" src="<?php bloginfo('template_url'); ?>/img/kv_badge_v2.svg"> */ ?>
   <ul class="p-kv__list slick01">
     <li class="p-kv__list__item -item01"><img class="p-kv__list__item__img" src="<?php bloginfo('template_url'); ?>/img/kv01.svg"></li>
     <li class="p-kv__list__item -item02"><img class="p-kv__list__item__img" src="<?php bloginfo('template_url'); ?>/img/kv02-min.jpg"></li>
@@ -11,7 +11,7 @@
     <li class="p-kv__list__item -item04"><img class="p-kv__list__item__img" src="<?php bloginfo('template_url'); ?>/img/kv04-min.jpg"></li>
     <li class="p-kv__list__item -item05"><img class="p-kv__list__item__img" src="<?php bloginfo('template_url'); ?>/img/kv05-min.jpg"></li>
   </ul>
-  <img class="p-kv__date" src="<?php bloginfo('template_url'); ?>/img/kv_date.svg">
+  <?php /* <img class="p-kv__date" src="<?php bloginfo('template_url'); ?>/img/kv_date.svg"> */ ?>
   <section class="p-news-top">
     <h2 class="p-news-top__title">
       <a href="<?php echo home_url('/news'); ?>" class="p-news-top__title__link">
@@ -57,6 +57,7 @@
 <!-- contents -->
 <div id="contents">
   <div class="l-contents-wrap01">
+    <?php /*     
     <section class="l-common-sec p-attention">
       <div class="l-common-sec__inner">
         <h2 class="c-title-jp p-attention__title">2021年度のこけし祭り<br class="u-sp_br">開催に関してのご注意</h2>
@@ -67,6 +68,7 @@
         <a href="<?php bloginfo('template_url'); ?>/pdf/2021_guidance.pdf" target=”_blank” class="c-button -point">詳細・お申し込み方法</a>
       </div>
     </section>
+    */ ?>
     <div id="what"></div>
     <section class="l-common-sec p-what">
       <ul class="p-what__list slick02">
@@ -166,9 +168,9 @@
           </p>
           <h2 class="p-events__event__title">こけし供養祭</h2>
           <p class="c-body">こけし祭りの前夜祭的行事です。（会場は温泉神社の境内。）こけし一本一本には、製作した伝統こけし工人の思いが込められており、各家庭においても長年、愛されてきたものです。割れてしまったことや傷ついたことで鑑賞出来なくなったこけしに感謝するとともに、今後のこけし業界の発展を願い、全国各地から寄せられたこけしを供養する儀式です。火柱が美しく舞い上がる様は、こけしが天へと旅立つようです。</p>
-          <p class="c-body -attention">
+          <!-- <p class="c-body -attention">
             ※第66回(2021年)はウィルス感染拡大防止のため縮小開催となりました。詳しくは大崎市鳴子総合支所地域振興課までお問い合わせください。
-          </p>
+          </p> -->
         </div>
         <img src="<?php bloginfo('template_url'); ?>/img/anime_kokeshi_01.gif" alt="" class="p-events__kokeshi01">
       </section>
@@ -190,9 +192,9 @@
           <h2 class="p-events__event__title">こけし奉納式</h2>
           <p class="c-body">こけし祭りの開会式前に行われる行事です。(会場は温泉神社)。各産地の伝統こけし工人が、こけしに対する感謝や願いを込めて温泉神社にこけしを奉納し、今後のこけし業界の発展、全国こけし祭りの成功を願う儀式です。程よい緊張感の中、いよいよ祭が始まります。
           </p>
-          <p class="c-body -attention">
+          <!-- <p class="c-body -attention">
             ※第66回(2021年)はウィルス感染拡大防止のため縮小開催となりました。詳しくは大崎市鳴子総合支所地域振興課までお問い合わせください。
-          </p>
+          </p> -->
         </div>
         <img src="<?php bloginfo('template_url'); ?>/img/anime_kokeshi_02.gif" alt="" class="p-events__kokeshi02">
       </section>
@@ -223,9 +225,9 @@
           </p>
           <h2 class="p-events__event__title">即売会→こけしの実演展示販売</h2>
           <p class="c-body">伝統こけし工人（招待工人）（招待工人）がこけしの絵付けをして販売します（会場は鳴子小学校体育館）。当日は朝から行列ができます。いよいよ開場、となると、みなさまが狙ったこけしに向かって一目散！午前中は熱狂に包まれますが、午後からは工人さんと実際にふれあい語らう素晴らしいチャンスになります。</p>
-          <p class="c-body -attention">
+          <!-- <p class="c-body -attention">
             ※第66回(2021年)はウィルス感染拡大防止のため即売会、実演展示販売は中止となりました。
-          </p>
+          </p> -->
         </div>
         <img src="<?php bloginfo('template_url'); ?>/img/anime_kokeshi_03.gif" alt="" class="p-events__kokeshi03">
       </section>
@@ -294,9 +296,9 @@
           <h2 class="p-events__event__title">こけし座談会</h2>
           <p class="c-body">クリエイターやタレント、こけし愛好家や伝統こけし工人を交えたにトークイベントを行います（開場は鳴子小学校体育館）。画像は一昨年の様子です。今年の最新情報は本サイト内でお知らせします。
           </p>
-          <p class="c-body -attention">
+          <!-- <p class="c-body -attention">
             ※第66回(2021年)はウィルス感染拡大防止のためこけし座談会は中止となりました。
-          </p>
+          </p> -->
         </div>
       </section>
       <section class="l-common-sec p-events__event -right">
@@ -324,9 +326,9 @@
           <h2 class="p-events__event__title">フェスティバルパレード</h2>
           <p class="c-body">伝統こけしを模した「張りぼてこけし」や初期のこけし祭りにあったといわれる頭だけの張りぼて「顔ボぼてこけし」に、一般募集した方が入り温泉街をパレードします。こけしの浴衣を着た地元婦人会と姉妹都市の婦人会のみなさんの「鳴子踊り」も必見です。その他、ゆるキャラ、万燈神輿なども登場します。まさに夢のような行列をどうぞ一度はご覧ください！
           </p>
-          <p class="c-body -attention">
+          <!-- <p class="c-body -attention">
             ※第66回(2021年)はウィルス感染拡大防止のため誠に残念ながらパレードは中止となりました。
-          </p>
+          </p> -->
         </div>
         <img src="<?php bloginfo('template_url'); ?>/img/anime_kokeshi_06.gif" alt="" class="p-events__kokeshi06">
       </section>

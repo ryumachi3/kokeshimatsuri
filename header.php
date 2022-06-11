@@ -2,13 +2,20 @@
 <html lang="ja">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5NMRSNB');</script>
+  <!-- End Google Tag Manager -->  
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
   <link rel="stylesheet" href="https://use.typekit.net/hte5kno.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick-theme.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.8" type="text/css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.10" type="text/css">
   <?php wp_head(); ?>
   <link rel="SHORTCUT ICON" href="https://kokeshimatsuri.com/wp/wp-content/themes/kokeshi/img/favicon.ico" />
   <meta name="description" content="全国こけし祭りでは、東北地方をはじめ各系統のこけし工人が集まり、全国の伝統こけしが一堂に会するこけしの実演展示即売会、コンクール入賞作品の展示、鳴子漆器の展示・即売やフェスティバルパレード、こけしの奉納式などが行われます。">
@@ -62,6 +69,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NMRSNB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="app">
     <transition name="loadin">
       <div v-if="isloading" class="c-loading p-loading">
