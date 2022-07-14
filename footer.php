@@ -100,7 +100,7 @@
             </dl>
             <dl class="p-footer__credit__item">
               <dt class="p-footer__credit__title">WEB DESIGN : </dt>
-              <dd class="p-footer__credit__data">monog(<a href="https://d-o-u.jp/" target="_blank" class="p-footer__credit__link">DOU</a>,<a href="https://eins-designstudio.com/" target="_blank" class="p-footer__credit__link">eins</a>)</dd>
+              <dd class="p-footer__credit__data"><a href="https://monog.jp/" target="_blank" class="p-footer__credit__link">monog</a></dd>
             </dl>
             </a>
           </div>
@@ -109,7 +109,7 @@
           <div class="p-footer__contact-area__group">
             <p class="p-footer__contact-area__address">
               大崎市鳴子総合支所地域振興課<br>
-              〒989-6892 宮城県大崎市鳴子温泉字新屋敷65
+              〒989-6892 宮城県大崎市鳴子温泉字鷲ノ巣86-1
             </p>
             <p class="p-footer__contact-area__contact">
               TEL：<a href="tel:0229-82-2026" class="c-tel p-footer__contact-area__contact__link -tel">0229-82-2026</a> / FAX：0229-82-2533 / <a href="mailto:n-chiiki@city.osaki.miyagi.jp" class="p-footer__contact-area__contact__link -mail">n-chiiki@city.osaki.miyagi.jp</a>
