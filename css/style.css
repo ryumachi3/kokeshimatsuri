@@ -1740,6 +1740,7 @@ img, svg {
   align-items: center;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
+  display: none;
 }
 
 .p-events__event__title {

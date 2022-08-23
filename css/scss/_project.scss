@@ -997,6 +997,7 @@
   align-items: center;
   padding-top: .8em;
   padding-bottom: .8em;
+  display: none; // 20220823 実際の時間とずれがあるため一旦非表示
 }
 
 .p-events__event__title{
