@@ -157,7 +157,7 @@
           大崎市鳴子総合支所地域振興課
         </dt>
         <dd class="p-gnav__contact__list__data">
-          TEL：<a class="p-gnav__contact__list__data__link c-tel" href="tel:0229-82-2026">0229-82-2026</a>
+          TEL：<a class="p-gnav__contact__list__data__link c-tel" href="tel:0229-82-2026">0229-82-2111</a>
         </dd>
       </dl>
     </div>
