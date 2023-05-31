@@ -112,7 +112,7 @@
               〒989-6892 宮城県大崎市鳴子温泉字鷲ノ巣86-1
             </p>
             <p class="p-footer__contact-area__contact">
-              TEL：<a href="tel:0229-82-2026" class="c-tel p-footer__contact-area__contact__link -tel">0229-82-2111</a> / FAX：0229-82-2533 / <a href="mailto:n-chiiki@city.osaki.miyagi.jp" class="p-footer__contact-area__contact__link -mail">n-chiiki@city.osaki.miyagi.jp</a>
+              TEL：<a href="tel:0229-82-2111" class="c-tel p-footer__contact-area__contact__link -tel">0229-82-2111</a> / FAX：0229-82-2533 / <a href="mailto:n-chiiki@city.osaki.miyagi.jp" class="p-footer__contact-area__contact__link -mail">n-chiiki@city.osaki.miyagi.jp</a>
             </p>
           </div>
           <div class="p-footer__contact-area__group">
