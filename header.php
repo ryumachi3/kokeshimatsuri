@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/hte5kno.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick-theme.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/slick/slick.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.11" type="text/css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.12" type="text/css">
   <?php wp_head(); ?>
   <link rel="SHORTCUT ICON" href="https://kokeshimatsuri.com/wp/wp-content/themes/kokeshi/img/favicon.ico" />
   <meta name="description" content="全国こけし祭りでは、東北地方をはじめ各系統のこけし工人が集まり、全国の伝統こけしが一堂に会するこけしの実演展示即売会、コンクール入賞作品の展示、鳴子漆器の展示・即売やフェスティバルパレード、こけしの奉納式などが行われます。">

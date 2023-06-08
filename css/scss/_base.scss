@@ -94,6 +94,7 @@ body {
   //animation: fadebody 1s ease-in;
   font-feature-settings: "palt";
   letter-spacing: .05em;
+  word-break: break-all;
   &.-noscroll{
     
   }

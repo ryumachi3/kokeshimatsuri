@@ -146,6 +146,7 @@ body {
   height: 100%;
   font-feature-settings: "palt";
   letter-spacing: 0.05em;
+  word-break: break-all;
 }
 a {
   cursor: pointer;
@@ -184,6 +185,7 @@ img, svg {
   line-height: 2;
   text-align: center;
   background-color: #fff;
+  word-break: break-all;
 }
 
 .l-contents-wrap01 {
